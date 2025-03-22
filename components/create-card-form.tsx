@@ -19,7 +19,7 @@ export function CreateCardForm({ onSubmit, onCancel }: CreateCardFormProps) {
   const [isGeneratingPrompt, setIsGeneratingPrompt] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
 

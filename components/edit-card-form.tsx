@@ -30,7 +30,7 @@ export function EditCardForm({ card, onSubmit, onCancel }: EditCardFormProps) {
   const [isGeneratingImage, setIsGeneratingImage] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
 
